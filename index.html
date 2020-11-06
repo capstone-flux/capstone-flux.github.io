@@ -6,7 +6,26 @@
     <!-- <link href="//db.onlinewebfonts.com/c/82108fd2eb6c0a60b9036a96d90b2717?family=POP+Rounded" rel="stylesheet" type="text/css"/> -->
 </head>
 
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("what-button").addEventListener("click", () => {
+            document.getElementById('description').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById("who-button").addEventListener("click", () => {
+            document.getElementById('team').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+</script>
+
 <body>
+
     <header>
         <div class="header-container">
             <div class="logo-container">
@@ -15,8 +34,8 @@
             </div>
 
             <div class="header-nav">
-                <a>What is flux</a>
-                <a>Who we are</a>
+                <a id="what-button">What is flux</a>
+                <a id="who-button">Who we are</a>
             </div>
         </div>
     </header>
@@ -28,7 +47,7 @@
 
             <div class="quote-container">
                 <div class="quote-container-inner">
-                    <p class="quote">&quot;</p>
+                    <img src="images/png/quotes.png" class="quote">
                     <p class="quote-text">Ça a fessé dans le dash en esti hier, j'étais paqueté en tabarnak, je suis
                         crissement lendemain de veille. T'es de bonne heure sul piton toé à matin, quessé qui t'arrive ?
                         Toryeu que c'est cheap cette esti de cochonnerie-là. Gârd le, y dort sua job le ptit esti, toute
@@ -48,26 +67,64 @@
 
             <div class="description-pannels">
                 <div class="description-pannels-items">
-                    <p>We do shit 1</p>
+                    <p class="title">Help broaden grid</p>
+                    <p class="text">We get it, its not the same since your wife had kids. Things aren't the same anymore
+                        and you need time off. However, your new girlfriend lives in Mashteuiatsh and it can be hard to
+                        go see here with your shabby Tesla. Fear not! By using Flux, you are commited to broaden the
+                        current EV charging network in Quebec. You won't need to stop in a St-Hubert for 4-5 hours
+                        reflecting on your poor life choices ever again while your car is getting more penetrating
+                        action than you</p>
                 </div>
 
                 <div class="description-pannels-items">
-                    <p>We do shit 2</p>
+                    <p class="title">Sick App bro!</p>
+                    <p class="text">Our High-tech app will allow you to find the closest chargers from you, reserve them
+                        and pay for your trip. In addition, we use quantum technologies to determine why your lif is a
+                        failure and if you will gain custody of your kids again. What an exciting age!</p>
                 </div>
 
                 <div class="description-pannels-items">
-                    <p>We do shit 3</p>
+                    <p class="title">Source of income</p>
+                    <p class="text"> We know owners of electric cars can be greedy fucks. In order to help the
+                        capitalist agenda, we ensure that poeple who already have money have even more after you decided
+                        to use their property. Clearly someone with a Tesla could spare 2-3$ for the greater good,
+                        right? Think again! With our product, we ensure that they can get every single penny they
+                        "deserve". Lol get lost commie </p>
                 </div>
             </div>
 
         </div>
         <div id="team" class="team-container">
+            <p class="team-title">
+                Meet the team
+            </p>
 
+            <div class="team-pannels">
+                <div class="team-pannels-items">
+                    <img src="images/png/Etienne.png"/>
+                </div>
+
+                <div class="team-pannels-items">
+                    <img src="images/png/victor.png"/>
+                </div>
+
+                <div class="team-pannels-items">
+                    <img src="images/png/jon.png"/>
+                </div>
+
+                <div class="team-pannels-items">
+                    <img src="images/png/matty.png"/>
+                </div>
+
+                <div class="team-pannels-items">
+                    <img src="images/png/nathan.png"/>
+                </div>
+            </div>
         </div>
 
     </main>
     <footer>
-        <p>Contact us</p>
+        <p>Made with ❤️</p>
     </footer>
 
 </body>

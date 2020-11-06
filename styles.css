@@ -7,7 +7,7 @@
 html {
     min-height: 100%;
     font-size: 14px;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* font-family: "POP Rounded", Verdana, Geneva, Tahoma, sans-serif; */
 }
 
@@ -21,16 +21,16 @@ body {
 
 header {
     background-color: white;
-    -webkit-box-shadow: 0px 0px 10px 2px #9E9E9E; 
+    -webkit-box-shadow: 0px 0px 10px 2px #9E9E9E;
     box-shadow: 0px 0px 10px 2px #9E9E9E;
     height: 75px;
 }
 
-.logo-container > .logo{
+.logo-container>.logo {
     height: 75px;
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     font-weight: 600;
     font-size: 2rem;
@@ -38,7 +38,7 @@ header {
     align-items: center;
 }
 
-header > .header-container {
+header>.header-container {
     height: 100%;
     padding: 0 20px 0 10px;
     display: flex;
@@ -46,16 +46,21 @@ header > .header-container {
     align-items: center;
 }
 
-.header-container > .header-nav{
+.header-container>.header-nav {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.header-nav > a{
+.header-nav>a {
     margin-left: 10px;
     font-weight: 600;
     color: black;
+}
+
+.header-nav>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .banner {
@@ -63,21 +68,21 @@ header > .header-container {
     height: 700px;
 }
 
-.guy-image{
+.guy-image {
     position: absolute;
-    bottom: 12%;
+    bottom: 30%;
     right: 2%;
-    width: 25%;
-    z-index:1;
+    width: 30%;
+    z-index: 1;
 }
 
-.banner > .wave-container{
+.banner>.wave-container {
     width: 100%;
     position: absolute;
     bottom: 0;
 }
 
-.quote-container{
+.quote-container {
     position: absolute;
     left: 10%;
     top: 10%;
@@ -85,18 +90,18 @@ header > .header-container {
     height: 20vh;
 }
 
-.quote-container > .quote-container-inner{
+.quote-container>.quote-container-inner {
     position: relative;
 }
 
-.quote-container-inner > .quote {
-    font-size: 6rem;
+.quote-container-inner>.quote {
+    width: 115px;
     position: absolute;
-    top: -133px;
-    left: -24px;
+    top: -43px;
+    left: -92px;
 }
 
-.quote-container-inner > .quote-text{
+.quote-container-inner>.quote-text {
     width: 100%;
     text-overflow: wrap;
     font-size: 1.5rem;
@@ -112,29 +117,74 @@ header > .header-container {
 
 .description-title {
     font-size: 2.5rem;
+    text-align: center;
 }
 
-.description-pannels{
+.description-pannels {
     padding: 0 20px 0 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.description-pannels > .description-pannels-items{
+.description-pannels>.description-pannels-items {
     border-radius: 10px;
     background-color: #a7d86d;
     margin: 10px;
     width: 30%;
     text-overflow: wrap;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
+
+    -webkit-box-shadow: 0px 3px 10px 2px #9E9E9E;
+    box-shadow: 0px 3px 10px 2px #9E9E9E;
 }
 
+.description-pannels-items > .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
 
+.description-pannels-items > .text {
+    text-overflow: wrap;
+}
+
+.team-title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.team-pannels {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.team-pannels>.team-pannels-items {
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    width: 30%;
+    text-overflow: wrap;
+    padding: 10px;
+
+    -webkit-box-shadow: 0px 3px 10px 2px #9E9E9E;
+    box-shadow: 0px 3px 10px 2px #9E9E9E;
+}
 
 footer {
     width: 100%;
-    height: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
     background-color: #a7d86d;
+}
+
+footer>p {
+    margin: 0;
 }
 
 main {
