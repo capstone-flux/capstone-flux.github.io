@@ -144,6 +144,12 @@ header>.header-container {
     color: white;
 }
 
+.title > .title-icon{
+    width: 1.65rem;
+    fill: white;
+    margin-right: 0.5rem;
+}
+
 .description-pannels-items > .text {
     text-overflow: wrap;
 }
