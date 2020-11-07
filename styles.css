@@ -172,10 +172,60 @@ header>.header-container {
     margin: 10px;
     width: 30%;
     text-overflow: wrap;
-    padding: 10px;
+    overflow: hidden;
+    display:flex;
 
     -webkit-box-shadow: 0px 3px 10px 2px #9E9E9E;
     box-shadow: 0px 3px 10px 2px #9E9E9E;
+}
+
+.info-container{
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.info-container > .name{
+    font-size: 2rem;
+    color: gray;
+    margin: 10px 0 10px 0;
+}
+
+.info-container > .job-title{
+    font-size: 1rem;
+    color:gray;
+    margin-top: 0;
+}
+
+.info-container > .experience{
+    font-size: 1.5rem;
+    color: gray;
+    margin: 20px 0 10px 0;
+}
+
+.info-container > .responsability{
+    font-size: 1.25rem;
+    color:gray;
+    margin-top: 10px;
+}
+
+.info-container > .microsoft-logo{
+    height: 2rem;
+}
+
+.info-container > .autodesk-logo{
+    height: 2rem;
+}
+
+.info-container > .cae-logo{
+    height: 3rem;
+}
+
+.info-container > .microdrones-logo{
+    height: 2rem;
+}
+
+.info-container > .sunlife-logo{
+    height: 3rem;
 }
 
 footer {
