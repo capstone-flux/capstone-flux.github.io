@@ -153,6 +153,7 @@ header>.header-container {
 
 .description-pannels-items > .text {
     text-overflow: wrap;
+    color: #404040;
 }
 
 .team-title {
