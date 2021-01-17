@@ -15,7 +15,8 @@ job "web"{
 
             config {
                     image = "fluxappacr.azurecr.io/web:latest"
-                    ports = ["http"]s
+                    ports = ["http"]
+                    force_pull = true
                     auth {
                         username = "<username>"
                         password = "<password>"
