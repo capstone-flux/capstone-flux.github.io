@@ -4,9 +4,10 @@ job "web"{
     group "web"{
 
         network {
-           port "http"{
-                static = 4000
-           }
+            port "http" {
+                static = 8080
+                to     = 80
+            }
         }
 
         task "web"{
@@ -14,7 +15,11 @@ job "web"{
 
             config {
                     image = "fluxappacr.azurecr.io/web:latest"
-                    ports = ["http"]
+                    ports = ["http"]s
+                    auth {
+                        username = "<username>"
+                        password = "<password>"
+                    }
              }
         }
 
